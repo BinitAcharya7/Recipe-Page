@@ -1,0 +1,157 @@
+:root {
+    --rose-800: hsl(332deg, 51%, 32%);
+    --rose-50: hsl(330deg, 100%, 98%);
+    --stone-900: hsl(24deg, 5%, 18%);
+    --stone-600: hsl(30deg, 10%, 34%);
+    --stone-150: hsl(30deg, 18%, 87%);
+    --stone-100: hsl(30deg, 54%, 90%);
+    --brown-800: hsl(14deg, 45%, 36%);
+    --white: hsl(0deg, 0%, 100%);
+    --spc-1600: 128px;
+    --spc-600: 48px;
+    --spc-500: 40px;
+    --spc-400: 32px;
+    --spc-300: 24px;
+    --spc-200: 16px;
+    --spc-150: 12px;
+    --spc-100: 8px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Outfit;
+    src: url('assets/fonts/outfit/Outfit-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: YoungSerif;
+    src: url('assets/fonts/young-serif/YoungSerif-Regular.ttf');
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: var(--spc-1600) var(--spc-600);
+    gap: var(--spc-500);
+
+}
+
+main {
+    font-family: Outfit;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spc-400);
+    padding: var(--spc-500);
+    /* padding: clamp(,(--spc-500),); */
+    max-width: 46rem;
+    font-weight: 400;
+    color: var(--stone-600);
+    line-height: 150%;
+}
+
+img {
+    border-radius: var(--spc-150);
+    max-width: 100%;
+    /* object-position: center; */
+    object-fit: contain;
+}
+
+.rose-text {
+    color: var(--rose-800);
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+.red-text {
+    color: var(--brown-800);
+}
+
+.header {
+    font-family: YoungSerif;
+    font-weight: 400;
+    font-size: 1.75rem;
+    line-height: 100%;
+}
+
+.main-title {
+    font-size: 2.5rem;
+    color: var(--stone-900);
+}
+
+.introduction {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spc-300);
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spc-300);
+}
+
+.bold-list {
+    font-weight: 700;
+}
+
+.preparation{
+    padding: var(--spc-300);
+}
+table {
+    padding: 0 var(--spc-400);
+}
+
+tr {
+    display: flex;
+}
+
+td:first-child {
+    width: 51%; /*remember this approach. was a headache trying to do everything but this*/
+}
+
+tr:not(:last-child) td {
+    border-bottom: 1px solid var(--stone-150);
+    padding-bottom: var(--spc-150);
+}
+
+tr td {
+    padding-top: var(--spc-150);
+}
+
+hr {
+    border: none;
+    color: var(--stone-150);
+}
+
+ol, ul {
+    padding-left: var(--spc-300);
+} /*.*/
+
+li {
+    padding-left: var(--spc-200);
+}/*.*/
+
+li::marker {
+    color: var(--brown-800);
+    font-weight: 700;
+}/*new pseudo element*/
+
+@media (max-width: 655px) {
+    body {
+        margin: 0 auto;
+        justify-content: flex-start;
+        gap: 0;
+    }
+
+    img {
+        border-radius: 0;
+    }
+    main {
+        padding: var(--spc-500) var(--spc-400);
+    }
+}
