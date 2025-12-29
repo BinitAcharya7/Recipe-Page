@@ -17,7 +17,8 @@
     --spc-100: 8px;
 }
 
-* {
+* { /*Always do the CSS reset. This was very painful having to deal with default properties of so many elements, not just body*/
+
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -58,6 +59,7 @@ main {
 img {
     border-radius: var(--spc-150);
     max-width: 100%;
+    max-height: 18.75rem;
     /* object-position: center; */
     object-fit: contain;
 }
@@ -67,6 +69,7 @@ img {
     font-weight: 600;
     font-size: 1.25rem;
 }
+
 .red-text {
     color: var(--brown-800);
 }
@@ -101,6 +104,7 @@ img {
 .preparation{
     padding: var(--spc-300);
 }
+
 table {
     padding: 0 var(--spc-400);
 }

@@ -25,8 +25,8 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ### Links
 
-- Solution URL: [Github Repository](https://github.com/BinitAcharya7/Blog-Preview-Card.git)
-- Live Site URL: [Live site URL](https://vercel.com/binitacharya7s-projects/blog-preview-card)
+- Solution URL: [Github Repository](https://github.com/BinitAcharya7/Recipe-Page)
+- Live Site URL: [Live site URL](https://recipe-page-beta-eosin.vercel.app/)
 
 ## My process
 
